@@ -7,6 +7,7 @@ const error = document.querySelector('.error')
 weatherForm.addEventListener('submit', (e)=>{
     e.preventDefault()
     const location = search.value
+    forecast.textContent = 'Loading...'
     fetch('/weather?address='+location).then((response)=>{
     response.json().then((data)=>{
         if(data.error){
