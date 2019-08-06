@@ -53,6 +53,7 @@ button{
     background: white;
     padding: 8px;
     transition: 1s;
+    outline: none;
 }
 button:hover{
     background: #888888;
